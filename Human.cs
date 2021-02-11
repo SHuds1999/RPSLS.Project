@@ -6,17 +6,11 @@ using System.Threading.Tasks;
 
 namespace RPSLS_Project
 {
-    class Program
+    class Human : Player
     {
-        static void Main(string[] args)
-        {
 
 
 
 
-
-
-
-        }
     }
 }

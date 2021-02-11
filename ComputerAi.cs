@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace RPSLS_Project
 {
-    class Program
+    class ComputerAi : Player
     {
-        static void Main(string[] args)
-        {
 
 
 
@@ -17,6 +15,13 @@ namespace RPSLS_Project
 
 
 
-        }
+
+
+
+
+
+
+
+
     }
 }
