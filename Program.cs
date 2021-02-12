@@ -12,7 +12,7 @@ namespace RPSLS_Project
         {
 
             Game game = new Game();
-            game.CompareGestures();
+            game.RunGame();
             Console.ReadLine();
 
 
