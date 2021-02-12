@@ -23,12 +23,6 @@ namespace RPSLS_Project
 
         }
 
-
-        
-
-
-
-
         public void CompareGestures()
         {
             player1.ChooseGesture();
@@ -138,14 +132,7 @@ namespace RPSLS_Project
             }
 
 
-
-
-
-
         }
-
-        
-
 
         public void DisplayWinner()
         {
@@ -164,11 +151,6 @@ namespace RPSLS_Project
 
         }
 
-
-
-
-
-
         public void RunGame()
         {
 
@@ -179,53 +161,7 @@ namespace RPSLS_Project
 
             DisplayWinner();
 
-
-
-
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

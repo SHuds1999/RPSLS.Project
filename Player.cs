@@ -26,48 +26,10 @@ namespace RPSLS_Project
             gestures.Add("sissors");
             gestures.Add("lizard");
             gestures.Add("spock");
-
-            
-
-
-
-
-
-
-
-
-
         }
 
 
         public abstract void ChooseGesture();
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
