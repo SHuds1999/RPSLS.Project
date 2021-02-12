@@ -9,6 +9,21 @@ namespace RPSLS_Project
     class Game
     {
 
+        Player player1 = new Human();
+        Player player2 = new ComputerAi();
+
+        string player1gesture;
+        string player2gesture;
+
+        public Game( string Player1gesture, string Player2gesture)
+        {
+            player1gesture = Player1gesture;
+            player2gesture = Player2gesture;
+
+            
+            
+
+        }
 
 
 
@@ -16,15 +31,17 @@ namespace RPSLS_Project
 
 
 
+        public void CompareGestures()
+        {
+
+            if(  )
 
 
 
 
+        }
 
-
-
-
-
+        
 
 
 
