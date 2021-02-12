@@ -8,16 +8,38 @@ namespace RPSLS_Project
 {
     class Game
     {
-
+       public void List<Game> GameModes;
         Player player1 = new Human();
         Player player2 = new ComputerAi();
   
         public Game()
         {
-            
+            GameModes = new List<Game>();
+           
+
+        }
+
+        public void ChooseGameMode()
+        {
+            RunGamePlayerVsAi(); 
+
 
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         public void CompareGestures()
         {
@@ -147,7 +169,7 @@ namespace RPSLS_Project
 
         }
 
-        public void RunGame()
+        public void RunGamePlayerVsAi()
         {
 
             while(player1.score < 3 && player2.score < 3)
@@ -158,6 +180,38 @@ namespace RPSLS_Project
             DisplayWinner();
 
         }
+
+
+        public void RunGamePlayerVsPlayer()
+        {
+
+            while (player1.score < 3 && player2.score < 3)
+            {
+                CompareGestures();
+            }
+
+            DisplayWinner();
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
