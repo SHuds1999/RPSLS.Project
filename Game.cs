@@ -8,23 +8,43 @@ namespace RPSLS_Project
 {
     class Game
     {
-       public void List<Game> GameModes;
-        Player player1 = new Human();
-        Player player2 = new ComputerAi();
+
+        Player player1;
+        Player player2;
   
         public Game()
         {
-            GameModes = new List<Game>();
-           
+          
 
         }
 
-        public void ChooseGameMode()
+
+        public void SelectGameMode()
         {
-            RunGamePlayerVsAi(); 
+            int userInput = 0;
+
+            while( userInput != 1 && userInput != 2 )//condition to check if true, if true, stay in while loop)
+            {
+
+                Console.WriteLine("What Game Mode Would You Like To Play. Type 1 for Single Player or Type 2 for MultiplayerPlayer.");
+                userInput = Convert.ToInt32(Console.ReadLine());
+            
+            }
 
 
+                if (userInput == 1)
+                {
+                    player1 = new Human();
+                    player2 = new ComputerAi();
+                }
 
+                else if (userInput == 2)
+                {
+                    player1 = new Human();
+                    player2 = new Human();
+                }
+            
+  
         }
 
 
@@ -33,16 +53,11 @@ namespace RPSLS_Project
 
 
 
-
-
-
-
-
-
-
+ 
 
         public void CompareGestures()
         {
+
             player1.ChooseGesture();
             player2.ChooseGesture();
 
@@ -169,9 +184,10 @@ namespace RPSLS_Project
 
         }
 
-        public void RunGamePlayerVsAi()
+        public void RunGame()
         {
-
+            SelectGameMode();
+             
             while(player1.score < 3 && player2.score < 3)
             {
                 CompareGestures();
@@ -180,38 +196,6 @@ namespace RPSLS_Project
             DisplayWinner();
 
         }
-
-
-        public void RunGamePlayerVsPlayer()
-        {
-
-            while (player1.score < 3 && player2.score < 3)
-            {
-                CompareGestures();
-            }
-
-            DisplayWinner();
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

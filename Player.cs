@@ -21,11 +21,11 @@ namespace RPSLS_Project
             score = 0;
 
 
-            gestures.Add("rock");
-            gestures.Add("paper");
-            gestures.Add("sissors");
-            gestures.Add("lizard");
-            gestures.Add("spock");
+            gestures.Add("Rock");
+            gestures.Add("Paper");
+            gestures.Add("Scissors");
+            gestures.Add("Lizard");
+            gestures.Add("Spock");
         }
 
 
