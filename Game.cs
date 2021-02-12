@@ -11,30 +11,55 @@ namespace RPSLS_Project
 
         Player player1 = new Human();
         Player player2 = new ComputerAi();
+        
+       
 
-        string player1gesture;
-        string player2gesture;
-
-        public Game( string Player1gesture, string Player2gesture)
+        public Game()
         {
-            player1gesture = Player1gesture;
-            player2gesture = Player2gesture;
-
+            
+            
             
             
 
         }
 
 
-
+        
 
 
 
 
         public void CompareGestures()
         {
+            player1.ChooseGesture();
+            player2.ChooseGesture();
 
-            if(  )
+            if( player1.chosenGesture == "Rock" &&  player2.chosenGesture == "Scissors" )
+            {
+
+                Console.WriteLine($"Player 1 chose {player1.chosenGesture} Player 2 chose {player2.chosenGesture}. Rock Crushes Paper. Player 1 wins ");
+
+                player1.score++;
+
+            }
+
+            else if ( player1.chosenGesture == "Scissors" && player2.chosenGesture == "Paper")
+            {
+
+                Console.WriteLine($"Player1 chose {player1.chosenGesture} Player 2 chose {player2.chosenGesture}. Scissors cuts Paper. Player 1 wins ");
+
+                player1.score++;
+
+            }
+
+
+
+
+
+
+
+
+
 
 
 

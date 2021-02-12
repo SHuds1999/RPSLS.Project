@@ -11,7 +11,9 @@ namespace RPSLS_Project
         static void Main(string[] args)
         {
 
-
+            Game game = new Game();
+            game.CompareGestures();
+            Console.ReadLine();
 
 
 

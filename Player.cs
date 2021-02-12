@@ -12,7 +12,7 @@ namespace RPSLS_Project
         //member variables (what should each player have?
 
         public List<string> gestures;
-        int score;
+        public int score;
         public string chosenGesture;
 
         public Player()
@@ -26,6 +26,14 @@ namespace RPSLS_Project
             gestures.Add("sissors");
             gestures.Add("lizard");
             gestures.Add("spock");
+
+            
+
+
+
+
+
+
 
 
 

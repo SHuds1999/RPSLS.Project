@@ -24,7 +24,7 @@ namespace RPSLS_Project
 
             //user input 
             int userInput;
-            Console.WriteLine("Please Choose A Gesture" + gestures[0] + gestures[1] + gestures[2] + gestures[3] + gestures[4]);
+            Console.WriteLine($"Please choose a Gesture. Press 0 for {gestures[0]} Press 1 for {gestures[1]} Press 2 for {gestures[2]} Press 3 for {gestures[3]} Press 4 for {gestures[4]}");
             userInput = Convert.ToInt32(Console.ReadLine());
             chosenGesture = gestures[userInput];
         }
