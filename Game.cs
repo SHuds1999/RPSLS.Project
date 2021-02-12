@@ -11,15 +11,11 @@ namespace RPSLS_Project
 
         Player player1 = new Human();
         Player player2 = new ComputerAi();
-        
-       
-
+  
         public Game()
         {
             
-            
-            
-            
+
 
         }
 
