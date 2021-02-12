@@ -8,10 +8,6 @@ namespace RPSLS_Project
 {
     class Human : Player
     {
-        
-        
-
-
 
         public Human()
         {
@@ -27,8 +23,7 @@ namespace RPSLS_Project
                 Console.WriteLine($"Please choose a Gesture. Press 1 for {gestures[0]} Press 2 for {gestures[1]} Press 3 for {gestures[2]} Press 4 for {gestures[3]} Press 5 for {gestures[4]}");
                     userInput = Convert.ToInt32(Console.ReadLine());
             }
-            
-
+  
             if (userInput == 1)
             {
                 chosenGesture = gestures[0];
@@ -52,10 +47,7 @@ namespace RPSLS_Project
             {
                 chosenGesture = gestures[4];
             }
-
-
-
-            
+          
         }
     }
 }
