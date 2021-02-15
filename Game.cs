@@ -61,7 +61,13 @@ namespace RPSLS_Project
             player1.ChooseGesture();
             player2.ChooseGesture();
 
-            if (player1.chosenGesture == "Rock" && player2.chosenGesture == "Scissors")
+
+            if(player1.chosenGesture == player2.chosenGesture)
+            {
+                Console.WriteLine("There had been a DRAW. No one gets a point.");
+            }
+
+            else if (player1.chosenGesture == "Rock" && player2.chosenGesture == "Scissors")//gesture objects.  have a string name for each object. have a list of objects that they beat. ie. Rock object would have a name of Rock.  List of strings would have the words "Lizard", "Scissors"
             {
 
                 Console.WriteLine($"Player 1 chose {player1.chosenGesture} Player 2 chose {player2.chosenGesture}. Rock Crushes Paper. Player 1 wins ");
@@ -157,6 +163,8 @@ namespace RPSLS_Project
                 player1.score++;
 
             }
+
+
 
             else
             {
